@@ -7,13 +7,14 @@
 
 .backgroundImg {
   height: 600px;
-  margin-left: auto;
+  margin-left: 0;
   max-width: 100vw;
 }
 
 .welcomeTexts {
   margin-top: 100px;
   color: #07085b;
+  max-width: 800px;
 }
 
 .welcomeTexts h1 {

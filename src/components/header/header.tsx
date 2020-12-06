@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/LogoText.png';
-
 import { ContainerHeader, Menu, ItemMenu, Content } from './styles';
 
 const Header: React.FC = () => {
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
                 <a href="#"> Conheça a Plataforma</a>
               </ItemMenu>
               <ItemMenu>
-                <a href="#">Login</a>
+                <Link to="/login">Login</Link>
               </ItemMenu>
             </ul>
           </Menu>
