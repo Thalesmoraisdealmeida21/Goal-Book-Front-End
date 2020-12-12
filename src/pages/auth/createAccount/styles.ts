@@ -11,8 +11,4 @@ export const ContainerLogin = styled.div`
     margin: 20px;
     width: 100%;
   }
-
-  span {
-    text-align: center;
-  }
 `;

@@ -13,6 +13,10 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 1150px) {
+    display: none;
+  }
+
   p {
     font-family: Roboto;
     font-style: normal;
@@ -33,6 +37,10 @@ export const FormContainer = styled.div`
   width: 50vw;
   background: white;
   display: flex;
+
+  @media (max-width: 1150px) {
+    width: 100vw;
+  }
 `;
 
 export const FormContent = styled.div`

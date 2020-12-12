@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useHistory } from 'react-router-dom';
 import Header from '../../components/header/header';
 
 import bg from '../../assets/HomeImage.png';
@@ -7,6 +8,7 @@ import bg from '../../assets/HomeImage.png';
 import './styles.css';
 
 const Home: React.FC = () => {
+  const history = useHistory();
   return (
     <>
       <Header />
@@ -19,7 +21,15 @@ const Home: React.FC = () => {
             você finalmente consiga ler todos os livros que falou que leria.
             Acesse e veja como funciona
           </p>
-          <button type="button"> Criar Conta</button>
+          <button
+            type="button"
+            onClick={() => {
+              history.push('/createaccount');
+            }}
+          >
+            {' '}
+            Criar Conta
+          </button>
         </div>
 
         <div className="backgroundImg">
